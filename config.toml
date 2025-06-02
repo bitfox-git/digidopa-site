@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url    = "https://www.digidopa.nl/"
+base_url    = "https://www.bitfox.nl/digidopa-site/"
 author      = "DigiDOPA"
 title       = "DigiDOPA"
 description = "Dagelijkse registratie van medicatie effecten voor Parkinsonpatiënten"
