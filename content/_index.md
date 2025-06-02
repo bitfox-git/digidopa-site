@@ -20,9 +20,9 @@ Een optimale persoonlijke afstelling van medicijngebruik voor elke Parkinsonpati
 3. Kijk gegevens terug en vul waar nodig bij
 4. Analyseer en stuur bij met de behandelend arts
 
-![app](app.png)
-
 ## DigiDOPA
+
+![app](app.png)
 
 Zorg & ICT slaan de handen inéén om Parkinsonpatiënten, met deze app zetten we ons in voor:
 

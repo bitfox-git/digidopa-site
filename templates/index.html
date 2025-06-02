@@ -7,13 +7,4 @@
 {%- block content -%}
 {{ section.content | safe }}
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const imgs = document.querySelectorAll('p > img');
-    imgs.forEach((img, index) => {
-      img.style.float = index % 2 === 0 ? 'right' : 'left';
-    });
-  });
-</script>
-
 {%- endblock content -%}
