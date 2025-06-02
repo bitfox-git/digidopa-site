@@ -1,7 +1,7 @@
 {%- macro breadcrumb(path) -%}
   {%- if path and path | length > 0 -%}
     <section aria-label="breadcrumb">
-      <a href="{{ get_url(path="/") }}">{{ config.title }}</a>
+      <a href="{{ get_url(path="/") }}">Home</a>
       {%- for elt in path -%}
         {%- set idx   = loop.index0 + 1 -%}
         {%- set segs  = path | slice(end=idx) -%}
