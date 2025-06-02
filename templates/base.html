@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    {%- block navigation -%}
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
@@ -22,15 +23,23 @@
             <li><a href="/app-downloaden">App downloaden</a></li>
         </ul>
     </nav>
+    {%- endblock navigation -%}
+
+    {%- block header -%}
     <header>
         <h1>{{ config.title }}</h1>
         <p>{{ config.description }}</p>
     </header>
+    {%- endblock header -%}
+
+    {%- block content -%}
     <main>
         {%- set comps = page.components | default(value=section.components | default(value=[])) -%}
         {{ macros::breadcrumb(path=comps) }}
         {%- block content -%}{%- endblock content -%}
     </main>
+    {%- endblock content -%}
+
     {%- block footer -%}
     <footer>
         <p>&copy; {{ now() | date(format="%Y") }} {{ config.author }}</p>
