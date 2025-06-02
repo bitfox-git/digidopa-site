@@ -5,13 +5,17 @@ template = "index.html"
 
 ## Digitale Dagelijkse Observatie van Parkinson Activiteit
 
-voor dagelijkse registratie van medicatie effecten bij Parkinsonpatiënten.
+![apps](apps.jpg)
+
+Voor dagelijkse registratie van medicatie effecten bij Parkinsonpatiënten.
 
 Een optimale persoonlijke afstelling van medicijngebruik voor elke Parkinsonpatiënt, dat kan met DigiDOPA. Deze app registreert medicatiemomenten en de respons daarop, zodat patiënt en arts samen de hoeveelheid medicijnen en innamemomenten kunnen aanpassen, resulterend in een verbetering van de Parkinsonklachten.
 
 [De DigiDOPA aanpak](/werkwijze)
 
 ## Stel medicatie optimaal af met gebruik van de DigiDOPA app
+
+![app](app.png)
 
 1. Stel medicatie inname, meetperiode en -momenten in
 2. Registreer bij elk alarm de actuele conditie
