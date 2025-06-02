@@ -8,7 +8,7 @@
         {%- set joined = segs | join(sep="/") -%}
         {%- set link  = "/" ~ joined ~ "/" -%}
         {%- if loop.last -%}
-          &nbsp;/&nbsp;{{ elt | replace(from="-", to=" ") }}
+          &nbsp;>&nbsp;{{ elt | replace(from="-", to=" ") }}
         {%- endif -%}
       {%- endfor -%}
     </section>
