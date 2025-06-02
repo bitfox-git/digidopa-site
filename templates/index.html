@@ -1,4 +1,13 @@
 {%- extends "base.html" -%}
+
+{%- block title -%}
+  {%- if section.title -%}
+    {{ section.title | replace(from="-", to=" ") }}
+  {%- else -%}
+    {{ page.slug | replace(from="-", to=" ") }}
+  {%- endif -%}
+{%- endblock title -%}
+
 {%- block content -%}
 <main>
     {{ section.content | safe }}
