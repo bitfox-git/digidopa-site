@@ -5,9 +5,7 @@
 {%- endblock title -%}
 
 {%- block content -%}
-<main>
-  {{ section.content | safe }}
-</main>
+{{ section.content | safe }}
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
