@@ -17,10 +17,32 @@
 <body>
     {%- block navigation -%}
     <nav>
-        <a href="/">Home</a>
-        <a href="/werkwijze">Werkwijze</a>
-        <a href="/app-downloaden">App downloaden</a>
+        <img src="{{ get_url(path='media/logo.png') }}" alt="Logo">
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/werkwijze">Werkwijze</a>
+            <a href="/app-downloaden">App downloaden</a>
+        </div>
+        <button id="toggle">☰</button>
     </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Toggle navigation menu for mobile view
+        document.getElementById('toggle').addEventListener('click', function () {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+        });
+    </script>
+
     {%- endblock navigation -%}
 
     {%- block header -%}

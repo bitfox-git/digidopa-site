@@ -19,25 +19,20 @@ body {
 
 nav {
   background-color: var(--background);
-  display: block;
-  left: 0;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 
-nav a {
-  display: flex;
-  float: right;
-  margin: 1em auto;
-  padding: 0 0.5rem;
-}
-
+button,
 .breadcrumb,
 a {
   color: var(--primary);
   text-decoration: none;
+  padding: 0.5em 0;
 }
 
 a:hover,
@@ -53,7 +48,7 @@ header {
   background-size: cover;
   color: var(--text);
   height: 300px;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 header hgroup {
@@ -92,7 +87,65 @@ main h2 {
   margin-bottom: 0.5em;
 }
 
+.active {
+  color: var(--text);
+}
+
 @media screen and (max-width: 700px) {
+  nav .links {
+    display: block;
+    width: 100%;
+  }
+
+  nav button {
+    display: flex;
+    float: right;
+    margin: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  nav img {
+    max-width: 15rem;
+    margin: auto 0;
+  }
+
+  nav a {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav button,
+  nav a {
+    border: 1px solid var(--primary);
+    background: var(--background);
+    cursor: pointer;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  .open a {
+    display: block;
+  }
+
+  .open img,
+  .open button {
+    display: none;
+  }
+
+  nav button:hover,
+  nav button:focus,
+  nav button:active,
+  nav a:hover,
+  nav a:focus,
+  nav a:active {
+    background-color: var(--primary);
+    color: var(--background);
+    font-weight: bold;
+  }
+
   header {
     text-align: center;
   }
@@ -114,6 +167,26 @@ main h2 {
 }
 
 @media screen and (min-width: 700px) {
+  nav img {
+    max-width: 15rem;
+    margin: auto 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav a {
+    margin: 1em auto;
+    padding: 0 0.5rem;
+  }
+
   header {
     text-align: right;
   }
