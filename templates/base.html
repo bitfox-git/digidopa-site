@@ -1,0 +1,41 @@
+{%- import "macros/breadcrumb.html" as macros -%}
+
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    {%- block head -%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{  get_url(path='css/style.css') }}">
+    <link rel="icon" href="{{ get_url(path='favicon.ico') }}" type="image/x-icon">
+    {%- endblock head -%}
+    <title>{%- block title -%}{{ config.title }}{%- endblock title -%}</title>
+    <meta name="description" content="{{ config.description }}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">{{ config.title }}</a></li>
+            <li><a href="/werkwijze">Werkwijze</a></li>
+            <li><a href="/app-downloaden">App downloaden</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>{{ config.title }}</h1>
+        <p>{{ config.description }}</p>
+    </header>
+    <main>
+        {%- set comps = page.components | default(value=section.components | default(value=[])) -%}
+        {{ macros::breadcrumb(path=comps) }}
+        {%- block content -%}{%- endblock content -%}
+    </main>
+    {%- block footer -%}
+    <footer>
+        <p>&copy; {{ now() | date(format="%Y") }} {{ config.author }}</p>
+    </footer>
+    {%- endblock footer -%}
+</body>
+
+</html>
