@@ -1,12 +1,10 @@
 +++
 title = "App Downloaden - DigiDOPA"
-template = "index.html"
 +++
 
 ## Download DigiDOPA voor iOS & Android
 
-![Download de app voor iOS](appstore.png)
-![Download de app voor Android](playstore.png)
+{{ download_app() }}
 
 Wil je op de hoogte blijven, volg ons dan via Facebook of Instagram.
 
