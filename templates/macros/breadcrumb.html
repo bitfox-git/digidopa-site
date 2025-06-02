@@ -1,0 +1,16 @@
+{%- macro breadcrumb(path) -%}
+  {%- if path and path | length > 0 -%}
+    <section aria-label="breadcrumb">
+      <a href="{{ get_url(path="/") }}">{{ config.title }}</a>
+      {%- for elt in path -%}
+        {%- set idx   = loop.index0 + 1 -%}
+        {%- set segs  = path | slice(end=idx) -%}
+        {%- set joined = segs | join(sep="/") -%}
+        {%- set link  = "/" ~ joined ~ "/" -%}
+        {%- if loop.last -%}
+          &nbsp;/&nbsp;<b>{{ elt | replace(from="-", to=" ") }}</b>
+        {%- endif -%}
+      {%- endfor -%}
+    </section>
+  {%- endif -%}
+{%- endmacro -%}
