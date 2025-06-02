@@ -112,8 +112,9 @@ ul {
 }
 
 footer {
+  clear: both;
   text-align: center;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 @media screen and (max-width: 700px) {
