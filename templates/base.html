@@ -32,13 +32,11 @@
     </header>
     {%- endblock header -%}
 
-    {%- block content -%}
     <main>
         {%- set comps = page.components | default(value=section.components | default(value=[])) -%}
         {{ macros::breadcrumb(path=comps) }}
         {%- block content -%}{%- endblock content -%}
     </main>
-    {%- endblock content -%}
 
     {%- block footer -%}
     <footer>
