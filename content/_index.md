@@ -13,6 +13,8 @@ Een optimale persoonlijke afstelling van medicijngebruik voor elke Parkinsonpati
 
 [De DigiDOPA aanpak](/werkwijze)
 
+{{ download_app() }}
+
 ## Stel medicatie optimaal af met gebruik van de DigiDOPA app
 
 1. Stel medicatie inname, meetperiode en -momenten in
