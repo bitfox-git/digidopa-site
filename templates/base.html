@@ -7,7 +7,7 @@
     {%- block head -%}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{  get_url(path='css/style.css') }}">
+    <link rel="stylesheet" href="{{  get_url(path='style.css') }}">
     <link rel="icon" href="{{ get_url(path='favicon.ico') }}" type="image/x-icon">
     {%- endblock head -%}
     <title>{%- block title -%}{{ config.title }}{%- endblock title -%}</title>
@@ -27,8 +27,10 @@
 
     {%- block header -%}
     <header>
-        <h1>{{ config.title }}</h1>
-        <p>{{ config.description }}</p>
+        <hgroup>
+            <h1>{{ config.title }}</h1>
+            <h2>{{ config.description }}</h2>
+        </hgroup>
     </header>
     {%- endblock header -%}
 
