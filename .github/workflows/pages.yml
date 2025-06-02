@@ -1,6 +1,8 @@
 name: GitHub Pages
 
 on:
+  schedule:
+    - cron: "0 0 1 1 *"
   push:
     branches:
       - main
@@ -28,3 +30,20 @@ jobs:
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZOLA_BUILD_DIR: public
+          BUILD_ONLY: true
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
