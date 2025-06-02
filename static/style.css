@@ -90,6 +90,7 @@ main h2 {
 
 .container p img {
   max-width: 300px;
+  margin: 0 2em;
 }
 
 .container p:nth-child(even) img {
