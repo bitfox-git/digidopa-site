@@ -2,7 +2,7 @@
 
 {%- block title -%}
   {%- if page.title -%}
-    {{ page.title | replace(from="-", to=" ") }}
+    {{ page.title }}
   {%- else -%}
     {{ page.slug | replace(from="-", to=" ") }} - {{ config.title }}
   {%- endif -%}
