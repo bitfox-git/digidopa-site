@@ -5,7 +5,17 @@
 {%- endblock title -%}
 
 {%- block content -%}
-<main class="container">
-    {{ section.content | safe }}
+<main>
+  {{ section.content | safe }}
 </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const imgs = document.querySelectorAll('p > img');
+    imgs.forEach((img, index) => {
+      img.style.float = index % 2 === 0 ? 'right' : 'left';
+    });
+  });
+</script>
+
 {%- endblock content -%}
