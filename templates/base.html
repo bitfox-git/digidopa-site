@@ -19,9 +19,9 @@
     <nav>
         <img src="{{ get_url(path='media/logo.png') }}" alt="Logo">
         <div class="links">
-            <a href="/">Home</a>
-            <a href="/werkwijze">Werkwijze</a>
-            <a href="/app-downloaden">App downloaden</a>
+            <a href="{{ get_url(path='') }}">Home</a>
+            <a href="{{ get_url(path='/werkwijze') }}">Werkwijze</a>
+            <a href="{{ get_url(path='/app-downloaden') }}">App downloaden</a>
         </div>
         <button id="toggle">☰</button>
     </nav>
