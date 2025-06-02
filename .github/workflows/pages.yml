@@ -29,9 +29,8 @@ jobs:
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ZOLA_BUILD_DIR: public
           BUILD_ONLY: true
+          ZOLA_BUILD_DIR: public
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
