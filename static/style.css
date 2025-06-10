@@ -246,6 +246,10 @@ hr+p img {
     margin-right: 8rem;
   }
 
+  header hgroup {
+    padding-right: 8rem;
+  }
+
   .block {
     width: 50%;
   }
@@ -262,6 +266,10 @@ hr+p img {
   .block:last-child,
   .links {
     margin-right: 20rem;
+  }
+
+  header hgroup {
+    padding-right: 20rem;
   }
 
   .block {
@@ -305,8 +313,7 @@ hr+p img {
     background-color: rgba(255, 255, 255, 0.5);
     float: right;
     height: 100%;
-    padding: 2em;
-    padding-right: 25%;
+    padding-top: 2em;
     position: relative;
     width: 350px;
   }
