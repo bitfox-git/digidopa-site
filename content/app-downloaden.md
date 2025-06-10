@@ -1,5 +1,8 @@
 +++
 title = "App Downloaden - DigiDOPA"
+
+[extra]
+class = "center"
 +++
 
 ## Download DigiDOPA voor iOS & Android

@@ -54,7 +54,13 @@
     </header>
     {%- endblock header -%}
 
+    {%- set current = section | default(value=page) -%}
+    {%- if current.extra and current.extra.class -%}
+    <main class="{{ current.extra.class }}">
+    {%- else -%}
     <main>
+    {%- endif -%}
+
         {%- set comps = page.components | default(value=section.components | default(value=[])) -%}
         {{ macros::breadcrumb(path=comps) }}
         {%- block content -%}{%- endblock content -%}

@@ -307,3 +307,16 @@ main img {
     max-width: 70rem;
   }
 }
+
+.center {
+  text-align: center;
+}
+
+.center p,
+.center div,
+.center img {
+  display: block;
+  margin: 0 auto;
+  float: none;
+  margin: 0.5rem auto;
+}
