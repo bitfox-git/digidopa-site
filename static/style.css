@@ -159,7 +159,7 @@ main img {
     padding: 0.5rem 0.8rem;
   }
 
-  footer img,
+  .logo,
   nav img {
     max-height: 1.5em;
     margin: auto 0;
