@@ -1,5 +1,6 @@
 :root {
   --background: #fbfbfb;
+  --background-transparent: rgba(251, 251, 251, 0.75);
   --bg-footer: #6e8ca0;
   --text: #2E3436;
   --primary: #D47FA6;
@@ -21,14 +22,14 @@ body {
 
 .footer,
 nav {
-  background-color: var(--background);
-  color: var(--text);
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
 nav {
+  background-color: var(--background-transparent);
+  color: var(--text);
   padding: 0.5rem;
   position: fixed;
   top: 0;
