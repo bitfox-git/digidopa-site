@@ -65,9 +65,10 @@
         <div class="footer">
             <div class="block">
                 <img src="{{ get_url(path='media/logo-wit.png') }}" alt="Logo" class="logo">
-                <p>{{ config.description }}</p>
+                <p>{{ config.description }}.</p>
                 <p>Email: <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a></p>
                 <p>Telefoon: <a href="tel:{{ config.extra.phone | replace(from=' ', to='') }}">{{ config.extra.phone }}</a></p>
+                <p>DigiDOPA is een merk van Lucrasoft Digital B.v. (kvk 71638768).</p>
             </div>
             <div class="block">
                 {%- set share_page = get_page(path="_footer.md") -%}

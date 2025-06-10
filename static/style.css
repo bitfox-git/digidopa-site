@@ -143,6 +143,7 @@ main img {
 
 .block {
   margin: 1rem;
+  width: 50%;
 }
 
 @media screen and (max-width: 700px) {
@@ -158,8 +159,9 @@ main img {
     padding: 0.5rem 0.8rem;
   }
 
+  footer img,
   nav img {
-    height: 1.5em;
+    max-height: 1.5em;
     margin: auto 0;
   }
 
@@ -247,6 +249,7 @@ main img {
 }
 
 @media screen and (min-width: 700px) {
+  footer img,
   nav img {
     max-height: 3em;
     margin-top: 0;
