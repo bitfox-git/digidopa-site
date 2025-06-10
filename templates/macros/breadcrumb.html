@@ -12,5 +12,9 @@
         {%- endif -%}
       {%- endfor -%}
     </section>
+  {%- else -%}
+    <section aria-label="breadcrumb" class="breadcrumb">
+      <a href="{{ get_url(path="") }}">Home</a>
+    </section>
   {%- endif -%}
 {%- endmacro -%}
