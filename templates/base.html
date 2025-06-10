@@ -75,7 +75,11 @@
                 {{ share_page.content | safe }}
             </div>
         </div>
-        <p class="copy">&copy; {{ now() | date(format="%Y") }} {{ config.author }}</p>
+        <p class="copy">
+            <a href="https://www.iubenda.com/privacy-policy/48909915">Privacy statement app</a> |
+            <a href="https://www.iubenda.com/privacy-policy/41243100">Privacy statement</a> |
+            {{ config.author }} {{ now() | date(format="%Y") }}
+        </p>
     </footer>
     {%- endblock footer -%}
 </body>
