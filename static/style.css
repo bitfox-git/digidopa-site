@@ -49,7 +49,6 @@ a:active {
 }
 
 header {
-  background-image: url('/media/header.jpg');
   background-position: center;
   background-size: cover;
   color: var(--text);

@@ -12,6 +12,11 @@
     {%- endblock head -%}
     <title>{%- block title -%}{{ config.title }}{%- endblock title -%}</title>
     <meta name="description" content="{{ config.description }}">
+    <style>
+        header {
+            background-image: url("{{ get_url(path='media/header.jpg') }}");
+        }
+    </style>
 </head>
 
 <body>
