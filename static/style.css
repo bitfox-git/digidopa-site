@@ -93,11 +93,6 @@ main h2 {
   margin-top: 2em;
 }
 
-main img {
-  max-width: 300px;
-  margin: 0.5rem;
-}
-
 .active {
   color: var(--text);
 }
@@ -125,8 +120,9 @@ hr,
 }
 
 main img {
-  max-width: 300px;
-  margin: 10px;
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
   float: right;
 }
 
