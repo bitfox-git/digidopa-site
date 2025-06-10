@@ -24,6 +24,12 @@ Een optimale persoonlijke afstelling van medicijngebruik voor elke Parkinsonpati
 3. Kijk gegevens terug en vul waar nodig bij
 4. Analyseer en stuur bij met de behandelend arts
 
+---
+
+![banner](banner.jpg)
+
+---
+
 ## DigiDOPA
 
 ![app](app.png)
