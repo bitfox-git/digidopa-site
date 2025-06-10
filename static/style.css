@@ -133,6 +133,7 @@ hr+p img {
 .footer {
   background-color: var(--bg-footer);
   color: var(--background);
+  padding: 1em 0;
 }
 
 .footer a {
@@ -149,12 +150,7 @@ hr+p img {
   margin: 1rem 0;
 }
 
-.block {
-  margin: 1rem;
-  width: 50%;
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   nav .links {
     display: block;
     width: 100%;
@@ -234,33 +230,46 @@ hr+p img {
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1500px) {
+@media screen and (min-width: 800px) and (max-width: 1500px) {
 
+  main,
   .block:first-child,
   nav img {
-    margin-left: 8%;
+    margin-left: 8rem;
   }
 
+  main,
   .block:last-child,
   .links {
-    margin-right: 8%;
+    margin-right: 8rem;
+  }
+
+  .block {
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 1500px) {
 
+  main,
   .block:first-child,
   nav img {
-    margin-left: 20%;
+    margin-left: 20rem;
   }
 
+  main,
   .block:last-child,
   .links {
-    margin-right: 20%;
+    margin-right: 20rem;
+  }
+
+  .block {
+    padding: 0.5rem;
+    width: 50%;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   footer img,
   nav img {
     max-height: 3em;
@@ -307,11 +316,6 @@ hr+p img {
 
   header h2 {
     font-size: 1.25em;
-  }
-
-  main {
-    margin: 0 auto;
-    max-width: 70rem;
   }
 }
 
