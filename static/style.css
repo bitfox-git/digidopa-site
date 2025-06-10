@@ -150,6 +150,14 @@ hr+p img {
   margin: 1rem 0;
 }
 
+@media screen and (max-width: 1500px) {
+.logo,
+  nav img {
+    max-height: 1.5em;
+    margin: auto 0;
+  }
+}
+
 @media screen and (max-width: 800px) {
   nav .links {
     display: block;
@@ -161,12 +169,6 @@ hr+p img {
     float: right;
     margin: 1rem;
     padding: 0.5rem 0.8rem;
-  }
-
-  .logo,
-  nav img {
-    max-height: 1.5em;
-    margin: auto 0;
   }
 
   nav a {
@@ -250,7 +252,6 @@ hr+p img {
 }
 
 @media screen and (min-width: 1500px) {
-
   main,
   .block:first-child,
   nav img {
@@ -267,9 +268,7 @@ hr+p img {
     padding: 0.5rem;
     width: 50%;
   }
-}
 
-@media screen and (min-width: 800px) {
   footer img,
   nav img {
     max-height: 3em;
@@ -277,7 +276,9 @@ hr+p img {
     margin-bottom: 0;
     margin-right: auto;
   }
+}
 
+@media screen and (min-width: 800px) {
   .links {
     display: flex;
     flex-direction: row;
