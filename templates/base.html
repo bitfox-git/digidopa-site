@@ -64,6 +64,7 @@
     <footer>
         <div class="footer">
             <div class="block">
+                <img src="{{ get_url(path='media/logo-wit.png') }}" alt="Logo" class="logo">
                 <p>{{ config.description }}</p>
                 <p>Email: <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a></p>
                 <p>Telefoon: <a href="tel:{{ config.extra.phone | replace(from=' ', to='') }}">{{ config.extra.phone }}</a></p>
