@@ -284,6 +284,7 @@ main img {
     float: right;
     height: 100%;
     padding: 2em;
+    padding-right: 25%;
     position: relative;
     width: 350px;
   }
