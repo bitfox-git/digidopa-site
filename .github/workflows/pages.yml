@@ -14,9 +14,17 @@ on:
       - "config.toml"
       - ".github/workflows/pages.yml"
   pull_request:
+    types:
+      - closed
     branches:
       - main
       - master
+    paths:
+      - "content/**"
+      - "static/**"
+      - "templates/**"
+      - "config.toml"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
