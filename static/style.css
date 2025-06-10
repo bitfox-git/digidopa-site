@@ -114,6 +114,11 @@ ul {
   align-items: center;
 }
 
+hr {
+  border: none;
+}
+
+hr,
 .copy {
   clear: both;
   text-align: center;
