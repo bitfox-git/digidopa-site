@@ -62,7 +62,18 @@
 
     {%- block footer -%}
     <footer>
-        <p>&copy; {{ now() | date(format="%Y") }} {{ config.author }}</p>
+        <div class="footer">
+            <div class="block">
+                <p>{{ config.description }}</p>
+                <p>Email: <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a></p>
+                <p>Telefoon: <a href="tel:{{ config.extra.phone | replace(from=' ', to='') }}">{{ config.extra.phone }}</a></p>
+            </div>
+            <div class="block">
+                {%- set share_page = get_page(path="_footer.md") -%}
+                {{ share_page.content | safe }}
+            </div>
+        </div>
+        <p class="copy">&copy; {{ now() | date(format="%Y") }} {{ config.author }}</p>
     </footer>
     {%- endblock footer -%}
 </body>
