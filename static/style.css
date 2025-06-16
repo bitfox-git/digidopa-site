@@ -20,7 +20,6 @@ body {
   background: var(--background);
 }
 
-.footer,
 nav {
   display: flex;
   justify-content: space-between;
@@ -109,11 +108,6 @@ ul {
   padding-left: 2em;
 }
 
-.block {
-  flex-direction: column;
-  align-items: center;
-}
-
 hr {
   border: none;
 }
@@ -159,7 +153,8 @@ hr+p img {
 }
 
 @media screen and (max-width: 1500px) {
-.logo,
+
+  .logo,
   nav img {
     max-height: 1.5em;
     margin: auto 0;
@@ -239,8 +234,26 @@ hr+p img {
     padding: 0.5rem;
   }
 
-  .footer {
+  .block {
+    width: 100%;
     padding: 0.5rem;
+    display: block;
+    ;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .footer,
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .block {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -268,6 +281,7 @@ hr+p img {
 }
 
 @media screen and (min-width: 1500px) {
+
   main,
   .block:first-child,
   nav img {
