@@ -1,0 +1,13 @@
+{%- set id = label | lower | replace(from=" ", to="-") -%}
+<iframe src="{{ url }}" id="{{ id }}" title="{{ label }}"></iframe>
+
+<script>
+    function resizeIframe() {
+        var iframe = document.getElementById("{{ id }}");
+        const height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        console.log("Resizing iframe with ID:", "{{ id }}", "to height:", height);
+        iframe.style.height = height;
+    }
+    window.addEventListener('load', resizeIframe);
+    window.addEventListener('resize', resizeIframe);
+</script>
