@@ -4,17 +4,12 @@ author      = "DigiDOPA"
 title       = "DigiDOPA"
 description = "Dagelijkse registratie van medicatie effecten voor Parkinsonpatiënten"
 
-# Whether to automatically compile all Sass files in the sass directory
+# Project settings
 compile_sass = false
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
-
-# Whether to build a sitemap.xml file
 generate_sitemap = true
-
-# Whether to minify HTML files
 minify_html = true
+generate_robots_txt = true
 
 [markdown]
 # Whether to do syntax highlighting
@@ -22,6 +17,6 @@ minify_html = true
 highlight_code = false
 
 [extra]
-# Put all your custom variables here
+# Custom variables
 email = "info@digidopa.nl"
 phone = "078 68 11 500"
